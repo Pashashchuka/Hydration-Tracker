@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import chevron from 'assets/icons/see-all-chevron.svg'
 import search from 'assets/icons/search.svg'
 import graph from 'assets/images/graph.png'
 import sun from 'assets/icons/sun.svg'
@@ -9,8 +10,10 @@ import Layout from 'components/Layout'
 
 import { INTAKE_DATA } from 'constants/intakeData'
 import { GRAPH_DATE } from 'constants/graphDate'
+import { FRUIT_DATA } from 'constants/fruitData'
 
 import styles from './TrackerPage.module.scss'
+import FruitCard from 'components/FruitCard'
 
 const TrackerPage: FC = () => {
   return (
@@ -118,6 +121,33 @@ const TrackerPage: FC = () => {
               <p key={id} className={styles.dateBlock__time}>
                 {time}
               </p>
+            ))}
+          </div>
+        </div>
+        <div className={styles.wrapper__tipsBlock}>
+          <div className={styles.wrapper__tipsBlock_headBlock}>
+            <h2 className={styles.headBlock__title}>Hydration Tips</h2>
+            <div className={styles.headBlock__seeAllBlock}>
+              <p className={styles.headBlock__seeAllBlock_message}>See All</p>
+              <img
+                className={styles.headBlock__seeAllBlock_chevron}
+                src={chevron}
+                alt="see all"
+              />
+            </div>
+          </div>
+          <p className={styles.wrapper__tipsBlock_subtitle}>
+            Consuming fruit juices keeps up the hydration level.
+          </p>
+          <div className={styles.wrapper__tipsBlock_fruitCardsBlock}>
+            {FRUIT_DATA.map(({ id, className, title, subtitle, image }) => (
+              <FruitCard
+                className={className}
+                subtitle={subtitle}
+                title={title}
+                image={image}
+                key={id}
+              />
             ))}
           </div>
         </div>

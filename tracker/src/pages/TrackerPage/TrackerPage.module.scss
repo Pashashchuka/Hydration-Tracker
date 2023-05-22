@@ -106,6 +106,34 @@
       width: 100%;
     }
   }
+
+  &__tipsBlock {
+    border: 1px solid var(--white-smoke-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 24px 32px;
+    width: 100%;
+
+    &_headBlock {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &_subtitle {
+      color: var(--griffin-color);
+      font: var(--font-text-8);
+      margin: 4px 0 16px 0;
+    }
+
+    &_fruitCardsBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
 }
 
 .title {
@@ -181,6 +209,31 @@
     &_subtitle {
       color: var(--blue-color);
       font: var(--font-text-7);
+    }
+  }
+
+  &__title {
+    color: var(--dark-grey-color);
+    font: var(--font-text-6);
+    font-weight: 500;
+  }
+
+  &__seeAllBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+
+    &_message {
+      color: var(--blue-grey-color);
+      cursor: pointer;
+      font: var(--font-text-5);
+    }
+
+    &_chevron {
+      cursor: pointer;
+      height: 7px;
+      width: 14px;
     }
   }
 }

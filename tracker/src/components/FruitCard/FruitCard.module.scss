@@ -1,0 +1,41 @@
+.greenCard,
+.orangeCard,
+.purpleCard {
+  align-items: flex-start;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 173px;
+  max-width: 223px;
+  padding: 25px 30px 24px 24px;
+  width: 100%;
+}
+
+.greenCard {
+  background-color: var(--light-green-color);
+}
+
+.orangeCard {
+  background-color: var(--light-mauve-color);
+}
+
+.purpleCard {
+  background-color: var(--light-purple-color);
+}
+
+.image {
+  height: 33px;
+  width: 32px;
+}
+
+.title {
+  color: var(--dark-grey-color);
+  font: var(--font-text-3);
+  font-weight: 500;
+}
+
+.subtitle {
+  color: var(--blue-grey-color);
+  font: var(--font-text-8);
+}
