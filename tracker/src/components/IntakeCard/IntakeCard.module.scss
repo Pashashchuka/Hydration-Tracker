@@ -1,0 +1,89 @@
+.greenCard,
+.purpleCard,
+.mauveCard {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 88px;
+  padding-left: 88px;
+  position: relative;
+  max-width: 244px;
+  width: 100%;
+}
+
+.percentBlock {
+  &__boldIcon {
+    height: 48px;
+    left: 10%;
+    position: absolute;
+    top: 23%;
+    width: 48px;
+    z-index: 1;
+  }
+
+  &__icon {
+    height: 48px;
+    left: 10%;
+    position: absolute;
+    top: 23%;
+    width: 48px;
+    z-index: 0;
+  }
+
+  &__percent {
+    color: var(--dark-color);
+    font: var(--font-text-4);
+    font-weight: 500;
+    left: 15%;
+    position: absolute;
+    top: 41%;
+  }
+}
+
+.greenCard {
+  background-color: var(--light-green-color);
+}
+
+.purpleCard {
+  background-color: var(--light-purple-color);
+}
+
+.mauveCard {
+  background-color: var(--light-mauve-color);
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.greenTitle,
+.purpleTitle,
+.mauveTitle {
+  font: var(--font-text-3);
+}
+
+.greenSubtitle,
+.purpleSubtitle,
+.mauveSubtitle {
+  font: var(--font-text-5);
+  font-weight: 700;
+}
+
+.greenTitle,
+.greenSubtitle {
+  color: var(--green-color);
+}
+
+.purpleTitle,
+.purpleSubtitle {
+  color: var(--purple-color);
+}
+
+.mauveTitle,
+.mauveSubtitle {
+  color: var(--mauve-color);
+}

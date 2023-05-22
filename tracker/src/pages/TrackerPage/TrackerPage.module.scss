@@ -64,6 +64,14 @@
       font-weight: 500;
     }
   }
+
+  &__intakeCardsBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+  }
 }
 
 .title {

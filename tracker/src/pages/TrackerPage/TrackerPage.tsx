@@ -3,7 +3,10 @@ import { FC } from 'react'
 import search from 'assets/icons/search.svg'
 import sun from 'assets/icons/sun.svg'
 
+import IntakeCard from 'components/IntakeCard'
 import Layout from 'components/Layout'
+
+import { INTAKE_DATA } from 'constants/intakeData'
 
 import styles from './TrackerPage.module.scss'
 
@@ -42,6 +45,33 @@ const TrackerPage: FC = () => {
           <p className={styles.wrapper__weatherBlock_subtitle}>
             Don’t forget to take your water bottle with you.
           </p>
+        </div>
+        <div className={styles.wrapper__intakeCardsBlock}>
+          {INTAKE_DATA.map(
+            ({
+              subtitleClassName,
+              titleClassName,
+              cardClassName,
+              boldIcon,
+              percent,
+              intake,
+              volume,
+              icon,
+              id,
+            }) => (
+              <IntakeCard
+                subtitleClassName={subtitleClassName}
+                titleClassName={titleClassName}
+                cardClassName={cardClassName}
+                boldIcon={boldIcon}
+                percent={percent}
+                intake={intake}
+                volume={volume}
+                icon={icon}
+                key={id}
+              />
+            ),
+          )}
         </div>
       </div>
     </Layout>
