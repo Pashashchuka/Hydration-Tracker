@@ -1,12 +1,14 @@
 import { FC } from 'react'
 
 import search from 'assets/icons/search.svg'
+import graph from 'assets/images/graph.png'
 import sun from 'assets/icons/sun.svg'
 
 import IntakeCard from 'components/IntakeCard'
 import Layout from 'components/Layout'
 
 import { INTAKE_DATA } from 'constants/intakeData'
+import { GRAPH_DATE } from 'constants/graphDate'
 
 import styles from './TrackerPage.module.scss'
 
@@ -72,6 +74,52 @@ const TrackerPage: FC = () => {
               />
             ),
           )}
+        </div>
+        <div className={styles.wrapper__graphBlock}>
+          <div className={styles.wrapper__graphBlock_headBlock}>
+            <div className={styles.headBlock__titleBlock}>
+              <p className={styles.headBlock__titleBlock_title}>Glass Intake</p>
+              <p className={styles.headBlock__titleBlock_subtitle}>200 ml</p>
+            </div>
+            <div className={styles.wrapper__graphBlock_glassPointsBlock}>
+              <div className={styles.glassPointsBlock__glassPoint}>
+                <div
+                  className={styles.glassPointsBlock__glassPoint_bluePoint}
+                ></div>
+                <p className={styles.glassPointsBlock__glassPoint_name}>
+                  Glass 1
+                </p>
+              </div>
+              <div className={styles.glassPointsBlock__glassPoint}>
+                <div
+                  className={styles.glassPointsBlock__glassPoint_pinkPoint}
+                ></div>
+                <p className={styles.glassPointsBlock__glassPoint_name}>
+                  Glass 2
+                </p>
+              </div>
+              <div className={styles.glassPointsBlock__glassPoint}>
+                <div
+                  className={styles.glassPointsBlock__glassPoint_redPoint}
+                ></div>
+                <p className={styles.glassPointsBlock__glassPoint_name}>
+                  Glass 3
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            className={styles.wrapper__graphBlock_graph}
+            src={graph}
+            alt="graph"
+          />
+          <div className={styles.wrapper__graphBlock_dateBlock}>
+            {GRAPH_DATE.map(({ id, time }) => (
+              <p key={id} className={styles.dateBlock__time}>
+                {time}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </Layout>
