@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react'
 
 import calendar from 'assets/icons/calendar.svg'
 import chevron from 'assets/icons/chevron.svg'
+import bottle from 'assets/images/bottle.png'
 import logo from 'assets/icons/logo.svg'
 
 import Menu from 'components/Menu'
@@ -42,6 +43,16 @@ const Layout: FC<LayotProps> = (props) => {
             src={chevron}
             alt="chevron"
           />
+        </div>
+        <div className={styles.rightbar__bottleBlock}>
+          <img
+            className={styles.rightbar__bottleBlock_bottle}
+            src={bottle}
+            alt="bottle"
+          />
+          <p className={styles.rightbar__bottleBlock_title}>
+            Stay Hydrated and beat heat.
+          </p>
         </div>
       </div>
     </div>

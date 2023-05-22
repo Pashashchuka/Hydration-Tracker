@@ -78,4 +78,32 @@
       width: 14px;
     }
   }
+
+  &__bottleBlock {
+    background-image: url('../../assets/images/bottle-bg.png');
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    height: 214px;
+    margin-top: 137px;
+    max-width: 260px;
+    padding: 0 20px 20px 48px;
+    position: relative;
+    width: 100%;
+
+    &_bottle {
+      height: 292px;
+      margin-top: -100px;
+      max-width: 75px;
+      width: 100%;
+    }
+
+    &_title {
+      color: var(--white-color);
+      font: var(--font-text-6);
+      margin-top: 53px;
+      max-width: 93px;
+      width: 100%;
+    }
+  }
 }
