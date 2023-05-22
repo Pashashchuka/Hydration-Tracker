@@ -1,5 +1,7 @@
 import { FC, ReactNode } from 'react'
 
+import calendar from 'assets/icons/calendar.svg'
+import chevron from 'assets/icons/chevron.svg'
 import logo from 'assets/icons/logo.svg'
 
 import Menu from 'components/Menu'
@@ -26,7 +28,22 @@ const Layout: FC<LayotProps> = (props) => {
         <Menu />
         <User />
       </div>
-      <div className={styles.layout__childrenBlock}>{props.children}</div>
+      <div className={styles.layout__children}>{props.children}</div>
+      <div className={styles.layout__rightbar}>
+        <div className={styles.rightbar__dateBlock}>
+          <img
+            className={styles.rightbar__dateBlock_calendar}
+            src={calendar}
+            alt="calendar"
+          />
+          <p className={styles.rightbar__dateBlock_date}>Tue, 24 Nov 2021</p>
+          <img
+            className={styles.rightbar__dateBlock_chevron}
+            src={chevron}
+            alt="chevron"
+          />
+        </div>
+      </div>
     </div>
   )
 }

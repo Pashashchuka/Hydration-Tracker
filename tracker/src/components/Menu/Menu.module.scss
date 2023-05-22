@@ -21,6 +21,10 @@
       flex-direction: row;
       font: var(--font-text-2);
       gap: 20px;
+
+      &:hover {
+        color: var(--dark-grey-color);
+      }
     }
   }
 }
