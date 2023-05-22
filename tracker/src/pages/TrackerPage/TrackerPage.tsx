@@ -56,6 +56,8 @@ const TrackerPage: FC = () => {
             ({
               subtitleClassName,
               titleClassName,
+              secondLineIcon,
+              firstLineIcon,
               cardClassName,
               boldIcon,
               percent,
@@ -67,6 +69,8 @@ const TrackerPage: FC = () => {
               <IntakeCard
                 subtitleClassName={subtitleClassName}
                 titleClassName={titleClassName}
+                secondLineIcon={secondLineIcon}
+                firstLineIcon={firstLineIcon}
                 cardClassName={cardClassName}
                 boldIcon={boldIcon}
                 percent={percent}

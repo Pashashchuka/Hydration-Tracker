@@ -1,3 +1,9 @@
+import firstGreenLineIcon from 'assets/icons/first-green-line.svg'
+import secondGreenLineIcon from 'assets/icons/second-green-line.svg'
+import firstPurpleLineIcon from 'assets/icons/first-purple-line.svg'
+import secondPurpleLineIcon from 'assets/icons/second-purple-line.svg'
+import firstMauveLineIcon from 'assets/icons/first-mauve-line.svg'
+import secondMauveLineIcon from 'assets/icons/second-mauve-line.svg'
 import purpleBoldIcon from 'assets/icons/bold-purple-ellipse.svg'
 import mauveBoldIcon from 'assets/icons/bold-mauve-ellipse.svg'
 import greenBoldIcon from 'assets/icons/bold-green-ellipse.svg'
@@ -11,6 +17,8 @@ export const INTAKE_DATA = [
   {
     subtitleClassName: styles.greenSubtitle,
     titleClassName: styles.greenTitle,
+    secondLineIcon: secondGreenLineIcon,
+    firstLineIcon: firstGreenLineIcon,
     cardClassName: styles.greenCard,
     boldIcon: greenBoldIcon,
     intake: 'Daily Intake',
@@ -22,6 +30,8 @@ export const INTAKE_DATA = [
   {
     subtitleClassName: styles.purpleSubtitle,
     titleClassName: styles.purpleTitle,
+    secondLineIcon: secondPurpleLineIcon,
+    firstLineIcon: firstPurpleLineIcon,
     cardClassName: styles.purpleCard,
     boldIcon: purpleBoldIcon,
     intake: 'Average Intake',
@@ -33,6 +43,8 @@ export const INTAKE_DATA = [
   {
     subtitleClassName: styles.mauveSubtitle,
     titleClassName: styles.mauveTitle,
+    secondLineIcon: secondMauveLineIcon,
+    firstLineIcon: firstMauveLineIcon,
     cardClassName: styles.mauveCard,
     boldIcon: mauveBoldIcon,
     intake: 'Total Intake',

@@ -87,3 +87,15 @@
 .mauveSubtitle {
   color: var(--mauve-color);
 }
+
+.firstLine {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.secondLine {
+  bottom: 1px;
+  position: absolute;
+  right: 0;
+}

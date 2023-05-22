@@ -3,9 +3,11 @@ import { FC } from 'react'
 import styles from './IntakeCard.module.scss'
 
 interface IIntakeCardProps {
-  subtitleClassName?: string
-  titleClassName?: string
-  cardClassName?: string
+  subtitleClassName: string
+  titleClassName: string
+  secondLineIcon: string
+  firstLineIcon: string
+  cardClassName: string
   boldIcon: string
   percent: string
   intake: string
@@ -16,6 +18,8 @@ interface IIntakeCardProps {
 const IntakeCard: FC<IIntakeCardProps> = ({
   subtitleClassName,
   titleClassName,
+  secondLineIcon,
+  firstLineIcon,
   cardClassName,
   boldIcon,
   percent,
@@ -38,6 +42,8 @@ const IntakeCard: FC<IIntakeCardProps> = ({
         <p className={titleClassName}>{intake}</p>
         <p className={subtitleClassName}>{volume}</p>
       </div>
+      <img className={styles.secondLine} src={secondLineIcon} alt="line" />
+      <img className={styles.firstLine} src={firstLineIcon} alt="line" />
     </div>
   )
 }
