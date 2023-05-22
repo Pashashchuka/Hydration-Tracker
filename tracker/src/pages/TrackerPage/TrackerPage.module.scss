@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: row;
     gap: 33px;
+    height: 100px;
     margin-top: 24px;
     max-width: 779px;
     padding: 38px 26px;
@@ -113,7 +114,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    padding: 24px 32px;
+    padding: 23px 32px;
     width: 100%;
 
     &_headBlock {
