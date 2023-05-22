@@ -1,0 +1,28 @@
+.layout {
+  height: 100%;
+  width: 100%;
+
+  &__logoBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: 56px 0 0 38px;
+
+    &_logo {
+      height: 32px;
+      width: 32px;
+    }
+
+    &_title {
+      background: -webkit-linear-gradient(
+        var(--blue-color),
+        var(--light-blue-color)
+      );
+      background-clip: text;
+      font: var(--font-text-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

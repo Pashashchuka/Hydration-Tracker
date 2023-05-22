@@ -6,7 +6,7 @@ const Loader: FC = () => {
   return (
     <div className={styles.loader}>
       Loading
-      <span className={styles.loader__span}></span>
+      <span className={styles.loader__elem}></span>
     </div>
   )
 }
