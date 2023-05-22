@@ -1,7 +1,16 @@
 .layout {
+  display: flex;
+  flex-direction: row;
   height: 100%;
   width: 100%;
 
+  &__leftbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.leftbar {
   &__logoBlock {
     align-items: center;
     display: flex;
