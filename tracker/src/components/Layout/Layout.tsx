@@ -1,9 +1,14 @@
 import { FC, ReactNode } from 'react'
 
+import secondBottomLine from 'assets/icons/second-bottom-line.svg'
+import firstBottomLine from 'assets/icons/first-bottom-line.svg'
+import secondTopLine from 'assets/icons/second-top-line.svg'
+import firstTopLine from 'assets/icons/first-top-line.svg'
 import calendar from 'assets/icons/calendar.svg'
 import chevron from 'assets/icons/chevron.svg'
 import bottle from 'assets/images/bottle.png'
 import logo from 'assets/icons/logo.svg'
+import drop from 'assets/icons/drop.svg'
 
 import Menu from 'components/Menu'
 import User from 'components/User'
@@ -53,6 +58,37 @@ const Layout: FC<LayotProps> = (props) => {
           <p className={styles.rightbar__bottleBlock_title}>
             Stay Hydrated and beat heat.
           </p>
+        </div>
+        <div className={styles.rightbar__goalBlock}>
+          <p className={styles.rightbar__goalBlock_title}>Intake Goal</p>
+          <p className={styles.rightbar__goalBlock_subtitle}>
+            18000 ml / 25000 ml
+          </p>
+          <img
+            className={styles.rightbar__goalBlock_drop}
+            src={drop}
+            alt="drop"
+          />
+          <img
+            className={styles.rightbar__goalBlock_firstBottomLine}
+            src={firstBottomLine}
+            alt="line"
+          />
+          <img
+            className={styles.rightbar__goalBlock_secondBottomLine}
+            src={secondBottomLine}
+            alt="line"
+          />
+          <img
+            className={styles.rightbar__goalBlock_firstTopLine}
+            src={firstTopLine}
+            alt="line"
+          />
+          <img
+            className={styles.rightbar__goalBlock_secondTopLine}
+            src={secondTopLine}
+            alt="line"
+          />
         </div>
       </div>
     </div>

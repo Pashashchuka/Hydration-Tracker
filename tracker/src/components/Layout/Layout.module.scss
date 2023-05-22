@@ -106,4 +106,61 @@
       width: 100%;
     }
   }
+
+  &__goalBlock {
+    align-items: flex-start;
+    background-image: url('../../assets/images/goal-bg.png');
+    display: flex;
+    flex-direction: column;
+    height: 133px;
+    justify-content: center;
+    margin-top: 32px;
+    padding-left: 24px;
+    position: relative;
+    width: 260px;
+
+    &_title {
+      color: var(--white-color);
+      font: var(--font-text-6);
+    }
+
+    &_subtitle {
+      color: var(--white-color);
+      font: var(--font-text-6);
+      font-weight: 600;
+    }
+
+    &_drop {
+      height: 36px;
+      right: 13%;
+      position: absolute;
+      top: 38%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+    }
+
+    &_firstBottomLine {
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    &_secondBottomLine {
+      bottom: 5%;
+      right: 0;
+      position: absolute;
+    }
+
+    &_firstTopLine {
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    &_secondTopLine {
+      left: 0;
+      position: absolute;
+      top: 1%;
+    }
+  }
 }
