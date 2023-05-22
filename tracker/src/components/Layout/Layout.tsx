@@ -3,6 +3,7 @@ import { FC, ReactNode } from 'react'
 import logo from 'assets/icons/logo.svg'
 
 import Menu from 'components/Menu'
+import User from 'components/User'
 
 import styles from './Layout.module.scss'
 
@@ -23,6 +24,7 @@ const Layout: FC<LayotProps> = (props) => {
           <h3 className={styles.leftbar__logoBlock_title}>Hydrocult</h3>
         </div>
         <Menu />
+        <User />
       </div>
       <div className={styles.layout__childrenBlock}>{props.children}</div>
     </div>
