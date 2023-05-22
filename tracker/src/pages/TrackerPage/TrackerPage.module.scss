@@ -239,40 +239,6 @@
   }
 }
 
-.glassPointsBlock {
-  &__glassPoint {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-
-    &_bluePoint,
-    &_pinkPoint,
-    &_redPoint {
-      border-radius: 50%;
-      height: 8px;
-      width: 8px;
-    }
-
-    &_bluePoint {
-      background-color: var(--blue-color);
-    }
-
-    &_pinkPoint {
-      background-color: var(--pink-color);
-    }
-
-    &_redPoint {
-      background-color: var(--red-color);
-    }
-
-    &_name {
-      color: var(--black-color);
-      font: var(--font-text-2);
-    }
-  }
-}
-
 .dateBlock {
   &__time {
     color: var(--griffin-color);

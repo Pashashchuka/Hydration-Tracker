@@ -6,14 +6,16 @@ import graph from 'assets/images/graph.png'
 import sun from 'assets/icons/sun.svg'
 
 import IntakeCard from 'components/IntakeCard'
+import GlassPoint from 'components/GlassPoint'
+import FruitCard from 'components/FruitCard'
 import Layout from 'components/Layout'
 
+import { GLASS_POINTS_DATA } from 'constants/glassPointsData'
 import { INTAKE_DATA } from 'constants/intakeData'
 import { GRAPH_DATE } from 'constants/graphDate'
 import { FRUIT_DATA } from 'constants/fruitData'
 
 import styles from './TrackerPage.module.scss'
-import FruitCard from 'components/FruitCard'
 
 const TrackerPage: FC = () => {
   return (
@@ -89,30 +91,9 @@ const TrackerPage: FC = () => {
               <p className={styles.headBlock__titleBlock_subtitle}>200 ml</p>
             </div>
             <div className={styles.wrapper__graphBlock_glassPointsBlock}>
-              <div className={styles.glassPointsBlock__glassPoint}>
-                <div
-                  className={styles.glassPointsBlock__glassPoint_bluePoint}
-                ></div>
-                <p className={styles.glassPointsBlock__glassPoint_name}>
-                  Glass 1
-                </p>
-              </div>
-              <div className={styles.glassPointsBlock__glassPoint}>
-                <div
-                  className={styles.glassPointsBlock__glassPoint_pinkPoint}
-                ></div>
-                <p className={styles.glassPointsBlock__glassPoint_name}>
-                  Glass 2
-                </p>
-              </div>
-              <div className={styles.glassPointsBlock__glassPoint}>
-                <div
-                  className={styles.glassPointsBlock__glassPoint_redPoint}
-                ></div>
-                <p className={styles.glassPointsBlock__glassPoint_name}>
-                  Glass 3
-                </p>
-              </div>
+              {GLASS_POINTS_DATA.map(({ id, className, content }) => (
+                <GlassPoint key={id} className={className} content={content} />
+              ))}
             </div>
           </div>
           <img

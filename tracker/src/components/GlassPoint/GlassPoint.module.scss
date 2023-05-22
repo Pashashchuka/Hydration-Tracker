@@ -1,0 +1,31 @@
+.point {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+
+  .bluePoint,
+  .pinkPoint,
+  .redPoint {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+  }
+
+  .bluePoint {
+    background-color: var(--blue-color);
+  }
+
+  .pinkPoint {
+    background-color: var(--pink-color);
+  }
+
+  .redPoint {
+    background-color: var(--red-color);
+  }
+
+  .name {
+    color: var(--black-color);
+    font: var(--font-text-2);
+  }
+}
