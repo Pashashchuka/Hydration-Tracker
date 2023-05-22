@@ -1,0 +1,32 @@
+.leftbar {
+  border-right: 1px solid var(--light-grey-color);
+  display: flex;
+  flex-direction: column;
+  max-width: 247px;
+  padding: 54px 18px 40px 0;
+  width: 100%;
+
+  &__logoBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: 38px;
+
+    &_logo {
+      height: 32px;
+      width: 32px;
+    }
+
+    &_title {
+      background: -webkit-linear-gradient(
+        var(--blue-color),
+        var(--light-blue-color)
+      );
+      background-clip: text;
+      font: var(--font-text-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

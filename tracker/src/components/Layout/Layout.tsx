@@ -8,13 +8,11 @@ import firstTopLine from 'assets/icons/first-top-line.svg'
 import calendar from 'assets/icons/calendar.svg'
 import chevron from 'assets/icons/chevron.svg'
 import bottle from 'assets/images/bottle.png'
-import logo from 'assets/icons/logo.svg'
 import drop from 'assets/icons/drop.svg'
 
 import DrinkLogCard from 'components/DrinkLogCard'
 import DotGroup from 'components/DotGroup'
-import Menu from 'components/Menu'
-import User from 'components/User'
+import Leftbar from 'components/Leftbar'
 
 import { DRINK_LOGS } from 'constants/drinkLogs'
 
@@ -27,18 +25,7 @@ type LayotProps = {
 const Layout: FC<LayotProps> = (props) => {
   return (
     <div className={styles.layout}>
-      <div className={styles.layout__leftbar}>
-        <div className={styles.leftbar__logoBlock}>
-          <img
-            className={styles.leftbar__logoBlock_logo}
-            src={logo}
-            alt="logo"
-          />
-          <h3 className={styles.leftbar__logoBlock_title}>Hydrocult</h3>
-        </div>
-        <Menu />
-        <User />
-      </div>
+      <Leftbar />
       <div className={styles.layout__children}>{props.children}</div>
       <div className={styles.layout__rightbar}>
         <div className={styles.rightbar__dateBlock}>
