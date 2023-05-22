@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react'
 
 import secondBottomLine from 'assets/icons/second-bottom-line.svg'
+import drinkLogChevron from 'assets/icons/drink-log-chevron.svg'
 import firstBottomLine from 'assets/icons/first-bottom-line.svg'
 import secondTopLine from 'assets/icons/second-top-line.svg'
 import firstTopLine from 'assets/icons/first-top-line.svg'
@@ -10,8 +11,12 @@ import bottle from 'assets/images/bottle.png'
 import logo from 'assets/icons/logo.svg'
 import drop from 'assets/icons/drop.svg'
 
+import DrinkLogCard from 'components/DrinkLogCard'
+import DotGroup from 'components/DotGroup'
 import Menu from 'components/Menu'
 import User from 'components/User'
+
+import { DRINK_LOGS } from 'constants/drinkLogs'
 
 import styles from './Layout.module.scss'
 
@@ -88,6 +93,22 @@ const Layout: FC<LayotProps> = (props) => {
             className={styles.rightbar__goalBlock_secondTopLine}
             src={secondTopLine}
             alt="line"
+          />
+        </div>
+        <div className={styles.rightbar__drinkLogBlock}>
+          <div className={styles.rightbar__drinkLogBlock_titleBlock}>
+            <p className={styles.titleBlock__title}>Drink Log</p>
+            <DotGroup className={styles.titleBlock__group} />
+          </div>
+          <div className={styles.rightbar__drinkLogBlock_logsBlock}>
+            {DRINK_LOGS.map(({ id, volume, time }) => (
+              <DrinkLogCard key={id} volume={volume} time={time} />
+            ))}
+          </div>
+          <img
+            className={styles.rightbar__drinkLogBlock_chevron}
+            src={drinkLogChevron}
+            alt="down"
           />
         </div>
       </div>

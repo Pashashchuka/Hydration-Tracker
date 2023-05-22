@@ -163,4 +163,54 @@
       top: 1%;
     }
   }
+
+  &__drinkLogBlock {
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 326px;
+    margin-top: 32px;
+    padding: 24px 24px 15px 24px;
+    position: relative;
+    max-width: 260px;
+    width: 100%;
+
+    &_titleBlock {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &_logsBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &_chevron {
+      cursor: pointer;
+      height: 7px;
+      width: 14px;
+    }
+  }
+}
+
+.titleBlock {
+  &__title {
+    color: var(--blue-color);
+    font: var(--font-text-5);
+  }
+
+  &__group {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-right: 10px;
+  }
 }

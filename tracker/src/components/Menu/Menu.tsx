@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { NAVIGATION_MENU } from './constants'
+import { NAVIGATION_MENU } from 'constants/navigationMenu'
 
 import styles from './Menu.module.scss'
 

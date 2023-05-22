@@ -1,4 +1,4 @@
-import styles from './Menu.module.scss'
+import styles from 'components/Menu/Menu.module.scss'
 
 import notificationsIcon from 'assets/icons/notifications.svg'
 import dashboardIcon from 'assets/icons/dashboard.svg'
