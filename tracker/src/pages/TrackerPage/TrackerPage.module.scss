@@ -33,12 +33,47 @@
       width: 100%;
     }
   }
+
+  &__weatherBlock {
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    margin-top: 24px;
+    max-width: 779px;
+    padding: 38px 26px;
+    width: 100%;
+
+    &_tempBlock {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
+    }
+
+    &_title {
+      color: var(--dark-color);
+      font: var(--font-text-3);
+    }
+
+    &_subtitle {
+      color: var(--griffin-color);
+      font: var(--font-text-3);
+      font-weight: 500;
+    }
+  }
 }
 
 .title {
   &__word {
     color: var(--blue-color);
     font: var(--font-h2);
+  }
+
+  &__boldWord {
+    font-weight: 600;
   }
 }
 
@@ -58,6 +93,34 @@
 
     &:focus {
       outline: none;
+    }
+  }
+}
+
+.tempBlock {
+  &__icon {
+    height: 52px;
+    width: 52px;
+  }
+
+  &__temperature {
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    font: var(--font-text-3);
+    font-weight: 600;
+    gap: 3px;
+    position: relative;
+
+    &_dot {
+      background: none;
+      border: 1px solid var(--dark-color);
+      border-radius: 50%;
+      height: 5px;
+      left: 54%;
+      position: absolute;
+      top: 0;
+      width: 5px;
     }
   }
 }

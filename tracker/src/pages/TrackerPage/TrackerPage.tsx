@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import search from 'assets/icons/search.svg'
+import sun from 'assets/icons/sun.svg'
 
 import Layout from 'components/Layout'
 
@@ -26,6 +27,21 @@ const TrackerPage: FC = () => {
               placeholder="Search"
             />
           </div>
+        </div>
+        <div className={styles.wrapper__weatherBlock}>
+          <div className={styles.wrapper__weatherBlock_tempBlock}>
+            <img className={styles.tempBlock__icon} src={sun} alt="sun" />
+            <p className={styles.tempBlock__temperature}>
+              26<span className={styles.tempBlock__temperature_dot}></span>C
+            </p>
+          </div>
+          <p className={styles.wrapper__weatherBlock_title}>
+            It’s a <span className={styles.title__boldWord}>Sunny Day </span>
+            today!
+          </p>
+          <p className={styles.wrapper__weatherBlock_subtitle}>
+            Don’t forget to take your water bottle with you.
+          </p>
         </div>
       </div>
     </Layout>
