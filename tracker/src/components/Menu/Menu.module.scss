@@ -1,0 +1,35 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 100px 0 0 40px;
+
+  &__title {
+    color: var(--blue-color);
+    font: var(--font-text-2);
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_item {
+      color: var(--grey-color);
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      font: var(--font-text-2);
+      gap: 20px;
+
+      &:hover {
+        color: var(--dark-grey-color);
+      }
+    }
+  }
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}

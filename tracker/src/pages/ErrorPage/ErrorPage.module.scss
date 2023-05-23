@@ -1,0 +1,30 @@
+.wrapper {
+  align-items: center;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+  &__title {
+    color: var(--blue-color);
+    font: var(--font-h1);
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__subtitle {
+    color: var(--blue-color);
+    font: var(--font-text-1);
+    text-align: center;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      scale: 0.95;
+    }
+  }
+}

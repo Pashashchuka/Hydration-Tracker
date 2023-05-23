@@ -1,0 +1,250 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 43px 40px 30px 40px;
+  width: 100%;
+
+  &__headBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 186px;
+    justify-content: center;
+    width: 100%;
+
+    &_title {
+      color: var(--blue-color);
+      font: var(--font-h2);
+      font-weight: 400;
+    }
+
+    &_searchBlock {
+      align-items: center;
+      background-color: var(--white-color);
+      border: 1px solid var(--whisper-color);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      height: 58px;
+      max-width: 300px;
+      padding: 19px 0 20px 24px;
+      width: 100%;
+    }
+  }
+
+  &__weatherBlock {
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    height: 100px;
+    margin-top: 24px;
+    max-width: 779px;
+    padding: 38px 26px;
+    width: 100%;
+
+    &_tempBlock {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
+    }
+
+    &_title {
+      color: var(--dark-color);
+      font: var(--font-text-3);
+    }
+
+    &_subtitle {
+      color: var(--griffin-color);
+      font: var(--font-text-3);
+      font-weight: 500;
+    }
+  }
+
+  &__intakeCardsBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+    max-width: 779px;
+    width: 100%;
+  }
+
+  &__graphBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    max-width: 779px;
+    width: 100%;
+
+    &_headBlock {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &_glassPointsBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    &_graph {
+      height: 149px;
+      margin-top: 32px;
+      width: 100%;
+    }
+
+    &_dateBlock {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px 0 0 16px;
+      width: 96%;
+    }
+  }
+
+  &__tipsBlock {
+    border: 1px solid var(--white-smoke-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    max-width: 779px;
+    padding: 23px 32px;
+    width: 100%;
+
+    &_headBlock {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &_subtitle {
+      color: var(--griffin-color);
+      font: var(--font-text-8);
+      margin: 4px 0 16px 0;
+    }
+
+    &_fruitCardsBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+}
+
+.title {
+  &__word {
+    color: var(--blue-color);
+    font: var(--font-h2);
+  }
+
+  &__boldWord {
+    font-weight: 600;
+  }
+}
+
+.searchBlock {
+  &__icon {
+    height: 19px;
+    width: 19px;
+  }
+
+  &__search {
+    border: none;
+    font: var(--font-text-3);
+
+    &::placeholder {
+      color: var(--dark-grey-color);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.tempBlock {
+  &__icon {
+    height: 52px;
+    width: 52px;
+  }
+
+  &__temperature {
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    font: var(--font-text-3);
+    font-weight: 600;
+    gap: 3px;
+    position: relative;
+
+    &_dot {
+      background: none;
+      border: 1px solid var(--dark-color);
+      border-radius: 50%;
+      height: 5px;
+      left: 54%;
+      position: absolute;
+      top: 0;
+      width: 5px;
+    }
+  }
+}
+
+.headBlock {
+  &__titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &_title {
+      color: var(--dark-grey-color);
+      font: var(--font-text-4);
+    }
+
+    &_subtitle {
+      color: var(--blue-color);
+      font: var(--font-text-7);
+    }
+  }
+
+  &__title {
+    color: var(--dark-grey-color);
+    font: var(--font-text-6);
+    font-weight: 500;
+  }
+
+  &__seeAllBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+
+    &_message {
+      color: var(--blue-grey-color);
+      cursor: pointer;
+      font: var(--font-text-5);
+    }
+
+    &_chevron {
+      cursor: pointer;
+      height: 7px;
+      width: 14px;
+    }
+  }
+}
+
+.dateBlock {
+  &__time {
+    color: var(--griffin-color);
+    font: var(--font-text-4);
+  }
+}

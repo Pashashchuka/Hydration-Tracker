@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(
+      var(--blue-color),
+      var(--light-blue-color)
+    );
+    border-radius: 5px;
+    height: 10px;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--white-color);
+}
