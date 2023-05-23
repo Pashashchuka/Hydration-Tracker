@@ -19,6 +19,12 @@
   }
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
   background-color: var(--white-color);
 }
